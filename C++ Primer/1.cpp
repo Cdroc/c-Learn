@@ -59,8 +59,8 @@ int main()
 {
 	int v1, v2;
 	std::cout << "The sum of " << v1;
-	          << " and " << v2;			// ÃŒÃ­Ã‰Ãstd::cout 
-	          << " is " << v1 + v2		// ÃŒÃ­Ã‰Ãstd::cout 
+	          << " and " << v2;			// 行首添加std::cout 
+	          << " is " << v1 + v2		// 行首添加std::cout 
 		      << std::endl;
 	return 0;
 }
@@ -245,3 +245,75 @@ int main()
 // 	std::cout << sum << std::endl;
 // 	return 0;
 // }
+
+// 1.4.4
+// #include <iostream>
+// int main()
+// {
+// 	int sum = 0, value;
+// 	while (std::cin >> value)
+// 		sum += value;
+// 	std::cout << "Sum is: " << sum << std::endl;
+// 	return 0;
+// }
+
+// 1-18
+// #include <iostream>
+// int main()
+// {
+// 	int num1, num2;
+// 	int max, min;
+// 	std::cout << "please input two numbers" << std::endl;
+// 	std::cin >> num1 >> num2;
+// 	if (num1 >= num2)
+// 	{
+// 		max = num1;
+// 		min = num2;
+// 	}
+// 	else
+// 	{
+// 		max = num2;
+// 		min = num1;
+// 	}
+// 	for (int i = min; i <= max; ++i)
+// 	{
+// 		std::cout << i << " ";
+// 	}
+// 	std::cout << std::endl;
+// 	return 0;
+// }
+
+// 1-19
+// #include <iostream>
+// int main()
+// {
+// 	int num1, num2;
+// 	int max, min;
+// 	int index = 0;
+// 	std::cout << "please input two numbers" << std::endl;
+// 	std::cin >> num1 >> num2;
+// 	if (num1 >= num2)
+// 	{
+// 		max = num1;
+// 		min = num2;
+// 	}
+// 	else
+// 	{
+// 		max = num2;
+// 		min = num1;
+// 	}
+// 	for (int i = min; i <= max; ++i)
+// 	{
+// 		std::cout << i << " ";
+// 		++index;
+// 		if (index >= 10)
+// 		{
+// 			std::cout << std::endl;
+// 			index = 0;
+// 		}
+// 	}
+// 	std::cout << std::endl;
+// 	return 0;
+// }
+
+// 1-20
